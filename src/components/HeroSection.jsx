@@ -4,6 +4,12 @@ export const HeroSection = () => {
     return <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center px-4">
         <div className="container max-w-4xl mx-auto text-center z-10">
             <div className="space-y-6">
+                <img 
+                    src="/profile.png" 
+                    alt="Muhammad Hafiz" 
+                    className="w-40 h-40 mx-auto rounded-3xl shadow-lg opacity-0 animate-fade-in"
+                />
+
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                     <span className="opacity-0 animate-fade-in">Hi, I'm </span>
                     <span className="text-primary opacity-0 animate-fade-in-delay-1">Muhammad Hafiz </span>
