@@ -28,7 +28,7 @@ export const AboutSection = () => {
                             Get In Touch
                         </a>
 
-                        <a href="src/assets/V10 MUHAMMAD HAFIZ BIN KHAIRUL KAMAL CV.pdf" target="_blank" rel="noopener noreferrer" 
+                        <a href="src/assets/V11 MUHAMMAD HAFIZ BIN KHAIRUL KAMAL CV.pdf" target="_blank" rel="noopener noreferrer" 
                         className={cn("px-6 py-2 rounded-full border border-primary text-primary", 
                                     "hover:bg-primary/10 transition-colors duratio-300")}>
                             View CV

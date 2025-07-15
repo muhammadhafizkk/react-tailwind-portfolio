@@ -7,8 +7,8 @@ const projects = [
         description: "Built a mobile app version of PlantLink Web Application in a team-based setting to help farmers receive crop suggestions based on IoT sensor data.",
         image: "/projects/project1.png",
         tags: ["Flutter", "Django", "MongoDB"],
-        demoUrl: "#",
-        githubUrl: "#",
+        demoUrl: "https://youtu.be/DU-MiJhn2Tg",
+        githubUrl: "https://github.com/muhammadhafizkk/PlantLink-Mobile",
     },
     {
         id: 2,
@@ -16,16 +16,16 @@ const projects = [
         description: "Developed and integrated the Student Module in a full-featured academic performance management web application.",
         image: "/projects/project2.png",
         tags: ["PHP Slim Framework", "Vue.js", "MySQL"],
-        demoUrl: "#",
-        githubUrl: "#",
+        demoUrl: "https://youtu.be/_7h2moxW8Gc",
+        githubUrl: "https://github.com/azizben345/course-mark-management-webapp",
     },
     {
         id: 3,
-        title: "Johor TVPSS Management Information System",
-        description: "Developed a comprehensive school program management system tracking media and journalism activities across multiple schools.",
+        title: "Testing using Katalon for WellCheck, Smart Health Monitoring System",
+        description: "Conducted comprehensive automated testing using Katalon Studio, ensuring robust functionality for viewing patient health status and managing prescriptions.",
         image: "/projects/project3.png",
-        tags: ["Spring Tool Suite", "JSP", "MySQL"],
-        demoUrl: "#",
+        tags: ["Katalon"],
+        demoUrl: "https://youtu.be/xMew1PM0Rp0",
         githubUrl: "#",
     },
     {
@@ -34,8 +34,8 @@ const projects = [
         description: "Built a mobile app version of PlantLink Web Application in a team-based setting to help farmers receive crop suggestions based on IoT sensor data.",
         image: "/projects/project4.png",
         tags: ["HTML/CSS", "Sass", "JavaScript", "PHP", "MySQL"],
-        demoUrl: "#",
-        githubUrl: "#",
+        demoUrl: "https://youtu.be/8-upPsHDF54",
+        githubUrl: "https://github.com/muhammadhafizkk/reportit",
     },
     {
         id: 5,
@@ -43,8 +43,8 @@ const projects = [
         description: "Developed a comprehensive fitness tracking application with user authentication and data persistence.",
         image: "/projects/project5.png",
         tags: ["Flutter", "Firebase"],
-        demoUrl: "#",
-        githubUrl: "#",
+        demoUrl: "https://www.youtube.com/shorts/t-tCFSaPG_0",
+        githubUrl: "https://github.com/azizben345/FitNest",
     },
 ]
 
@@ -84,11 +84,15 @@ export const ProjectsSection = () => {
                                         className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                         <MonitorPlay size={20}/>
                                     </a>
-                                    <a href={project.githubUrl} 
-                                        target="_blank"
-                                        className="text-foreground/80 hover:text-primary transition-colors duration-300">
-                                        <Github size={20}/>
-                                    </a>
+                                    {project.githubUrl && project.githubUrl !== "#" && (
+                                        <a
+                                            href={project.githubUrl}
+                                            target="_blank"
+                                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                        >
+                                            <Github size={20} />
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
