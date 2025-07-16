@@ -31,7 +31,7 @@ const projects = [
     {
         id: 4,
         title: "ReportIt, a Hostel Damage Complaint Web Application",
-        description: "Built a mobile app version of PlantLink Web Application in a team-based setting to help farmers receive crop suggestions based on IoT sensor data.",
+        description: "Created a responsive web app to digitize hostel damage reporting.",
         image: "/projects/project4.png",
         tags: ["HTML/CSS", "Sass", "JavaScript", "PHP", "MySQL"],
         demoUrl: "https://youtu.be/8-upPsHDF54",
